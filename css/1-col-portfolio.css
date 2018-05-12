@@ -5,83 +5,86 @@
  */
 
 body {
-  padding-top: 54px;
-  font-family: 'Raleway', sans-serif;
-  color: #2F4F4F;
+    padding-top: 54px;
+    font-family: 'Raleway', sans-serif;
+    color: #2F4F4F;
 }
 
- .nav-item {
-   color: #2F4F4F;
- }
+.nav-item {
+    color: #2F4F4F;
+}
 
 .title-bar {
-  background-image: url("../images/brooklyn.jpg");
-  font-family: 'Raleway', sans-serif;
-  color: #671515;
-  text-align: center;
+    background-image: url("../images/brooklyn.jpg");
+    font-family: 'Raleway', sans-serif;
+    color: #671515;
+    text-align: center;
 }
 
 .page-title {
-  color: #006400;
-  font-size: 54px;
-  font-weight: bold;
-  text-shadow: none;
+    color: #006400;
+    font-size: 54px;
+    font-weight: bold;
+    text-shadow: none;
 }
 
 .page-subtitle {
-  margin: 14px 0px 2px 0px;
+    margin: 14px 0px 2px 0px;
 }
 
 .title-span {
-  background-color: rgb(255,255,255,.7);
-  padding: 3px;
+    background-color: rgb(255, 255, 255, .7);
+    padding: 3px;
 }
 
 .project-title {
-  padding-bottom: 8px;
-  border-bottom: solid 2px #ecf0f1;
+    padding-bottom: 8px;
+    border-bottom: solid 2px #ecf0f1;
 }
 
 .pagination {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 a {
-  color: #57A746;
+    color: #57A746;
 }
 
 a:hover {
-  color: #006400;
-  text-decoration: none;
+    color: #006400;
+    text-decoration: none;
 }
 
 .tech {
-  background-color: #57A746;
-  color: #fff;
-  padding: 4px;
-  line-height: 2;
+    background-color: #57A746;
+    color: #fff;
+    padding: 4px;
+    line-height: 2;
 }
 
 .tech:hover {
-  background-color: #006400;
-  color: #fff;
+    background-color: #006400;
+    color: #fff;
 }
 
 .contact {
-  color: #006400;
+    color: #006400;
 }
 
 .fa {
-  color: #006400;
+    color: #006400;
 }
 
 footer {
-  width: 100%;
-  background-color: #ecf0f1;
+    background-color: #ecf0f1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
 }
 
 @media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-  }
+    body {
+        padding-top: 56px;
+    }
 }
