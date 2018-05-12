@@ -34,7 +34,8 @@ body {
 
 .title-span {
     background-color: rgb(255, 255, 255, .7);
-    padding: 3px;
+    padding: 4px 5px;
+    border-radius: 4px;
 }
 
 .project-title {
@@ -58,8 +59,9 @@ a:hover {
 .tech {
     background-color: #57A746;
     color: #fff;
-    padding: 4px;
+    padding: 4px 5px;
     line-height: 2;
+    border-radius: 2px;
 }
 
 .tech:hover {
@@ -74,6 +76,7 @@ a:hover {
 .fa {
     color: #006400;
 }
+
 
 footer {
     background-color: #ecf0f1;
