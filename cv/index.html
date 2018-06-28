@@ -8,27 +8,41 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>KGmaps</title>
+    <title>Kerry Gathers</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    -->
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 
     <!-- Google web font -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/1-col-portfolio.css" rel="stylesheet">
+    <link href="../css/1-col-portfolio.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js">
+    </script>
 
 </head>
 
 <body id="projects">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="https://kerrygathers.github.io/"><strong>KGmaps</strong></a>
+    <nav class="fixed-top">
+        <div class="header-bar">
+            <!--
+            <a class="navbar-brand" href="https://kerrygathers.github.io/"><strong>Kerry Gathers</strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -44,257 +58,151 @@
                     </li>
                 </ul>
             </div>
+       -->
+            <span class="contact-info">kerry.gathers@gmail.com&nbsp;&nbsp;|&nbsp;&nbsp;404-210-8653</span>
         </div>
     </nav>
 
     <!-- Page Content -->
     <div class="container pt-4">
 
-        <div class="container title-bar py-3">
-            <h3 class="page-title"><span class="title-span">KGmaps</span></h3>
-            <p class="page-subtitle"><span class="title-span">Maps &amp; Other Work by Kerry Gathers</span></p>
+        <div class="cv-title-bar mb-3">
+            <!--<div class="float-md-right mt-3" style="height: 116px;"><img class="rounded img-fluid h-100" src="../images/kerry.jpg" alt=""></div>-->
+            <span class="cv-title">Kerry Gathers</span>
+            <h5 class="cv-subtitle pt-1 pb-2">
+                <nobr><i class="fa fa-globe fa-fw mr-1"></i>&#8239;GIS &amp; Cartography</nobr>&nbsp;&nbsp;&nbsp;&nbsp;
+                <nobr><i class="fa fa-building fa-fw mr-2"></i>Urban Planning</nobr>&nbsp;&nbsp;&nbsp;&nbsp;
+                <nobr><i class="fa fa-desktop  fa-fw mr-2"></i>Front End Web Development</nobr>
+            </h5>
         </div>
 
-        <hr>
-
         <section>
-            <!-- Project 1 -->
-            <div class="row">
-                <div class="col-md-7">
-                    <a href="https://kerrygathers.github.io/oil-and-bone/" target="_blank">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="images/oil-and-bone.png" alt="Oil and Bone">
-          </a>
-                </div>
-                <div class="col-md-5">
-                    <h3 class="project-title">Oil &amp; Bone</h3>
-                    <p>This map illustrates the economic impact of whaling in American port cities during the industry's 19th century "Golden Age," when Yankee whale oil illuminated homes and city streets around the world. Data are drawn from the <a href='https://nmdl.org/projects/aowv/aowv/' target='_blank'>American Offshore Whaling Voyages Database</a>, with narrative elements inspired by Eric Jay Dolin's <i><a href='http://www.powells.com/book/-9780393331578' target='_blank'>Leviathan: The History of Whaling in America</a></i>.
-                    </p>
-                    <p><small>
-            Tech: <a class="tech" href="http://leafletjs.com/" target="_blank">Leaflet</a>
-            <nobr><a class="tech" href="https://github.com/mapbox/leaflet-omnivore" target="_blank">Leaflet Omnivore</a></nobr>
-            <nobr><a class="tech" href="https://www.mapbox.com/studio/" target="_blank">Mapbox Studio</a></nobr>
-            <a class="tech" href="https://www.mapbox.com/assembly/">Assembly.css</a>
-            <a class="tech" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>
-            <a class="tech" href="https://jquery.com/" target="_blank">jQuery</a>
-            <a class="tech" href="https://omnipotent.net/jquery.sparkline/#s-about" target="_blank">jQuery Sparklines</a>
-            <nobr><a class="tech" href="https://github.com/d3/d3-scale" target="_blank">d3-scale</a></nobr>
-            <a class="tech" href="http://numbrojs.com/" target="_blank">Numbro</a>
-          </small></p>
-                    <a class="btn btn-primary" href="https://kerrygathers.github.io/oil-and-bone/" target="_blank">View Project</a>
-                </div>
-            </div>
-            <!-- /.row -->
-
-            <hr>
-
-            <!-- Project 2 -->
-            <div class="row">
-                <div class="col-md-7">
-                    <a href="https://kerrygathers.github.io/us-unemployment/" target="_blank">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="images/unemployment.gif" alt="">
-          </a>
-                </div>
-                <div class="col-md-5">
-                    <h3 class="project-title">Unemployment in the US</h3>
-                    <p>Tracing unemployment rates across the US from recession to boom to recession, this map illustrates the volatility of the US economy from 2001 to 2015. Beneath the high-level trends, the map exposes regional and local stories, like stability amid national crisis, or crisis amid national recovery.
-                    </p>
-                    <p><small>
-            Tech: <a class="tech" href="http://leafletjs.com/" target="_blank">Leaflet</a>
-            <a class="tech" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>
-            <a class="tech" href="https://jquery.com/" target="_blank">jQuery</a>
-            <a class="tech" href="http://gka.github.io/chroma.js/" target="_blank">Chroma.js</a>
-            <a class="tech" href="https://www.papaparse.com/" target="_blank">PapaParse</a>
-          </small></p>
-                    <a class="btn btn-primary" href="https://kerrygathers.github.io/us-unemployment/" target="_blank">View Project</a>
-                </div>
-            </div>
-            <!-- /.row -->
-
-            <hr>
-
-            <!-- Project 3 -->
-            <div class="row">
-                <div class="col-md-7">
-                    <a href="https://kerrygathers.github.io/attainment-nyc/" target="_blank">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="images/education.png" alt="">
-          </a>
-                </div>
-                <div class="col-md-5">
-                    <h3 class="project-title">NYC Educational Attainment</h3>
-                    <p>While inequality in New York City is typically discussed in terms of income, it shows up in myriad other social conditions. This map explores <a href="https://www.census.gov/topics/education/educational-attainment/about.html" target="_blank">educational attainment</a> levels in a city where neighborhoods in which 8 in 10 adults have finished college are a short train ride from areas where over a quarter of adults have less than a 9th grade education.
-                    </p>
-                    <p><small>
-            Tech: <a class="tech" href="http://leafletjs.com/" target="_blank">Leaflet</a>
-            <a class="tech" href="https://www.javascript.com/" target="_blank">JavaScript</a>
-            <a class="tech" href="https://jquery.com/" target="_blank">jQuery</a>
-            <a class="tech" href="https://simplestatistics.org/" target="_blank"><nobr>Simple Statistics</nobr></a>
-          </small></p>
-                    <a class="btn btn-primary" href="https://kerrygathers.github.io/attainment-nyc/" target="_blank">View Project</a>
-                </div>
-            </div>
-            <!-- /.row -->
-
-            <hr>
-
-            <!-- Project 4 -->
-            <div class="row">
-                <div class="col-md-7">
-                    <a href="https://kerrygathers.github.io/avg-rent-map/" target="_blank">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="images/rent.png" alt="">
-          </a>
-                </div>
-                <div class="col-md-5">
-                    <h3 class="project-title">The Rent Is Too Damn High</h3>
-                    <p>This map examines the average cost of rent across the US using data from the American Community Survey. A searchable table built with the <a href="https://datatables.net/DataTables" target="_blank">DataTables</a> jQuery plug-in complements the map.
-                    </p>
-                    <p><small>
-            Tech: <a class="tech" href="http://leafletjs.com/" target="_blank">Leaflet</a>
-            <a class="tech" href="https://www.javascript.com/" target="_blank">JavaScript</a>
-            <a class="tech" href="https://jquery.com/" target="_blank">jQuery</a>
-            <a class="tech" href="https://www.datatables.net/" target="_blank">DataTables</a>
-            <a class="tech" href="https://simplestatistics.org/" target="_blank"><nobr>Simple Statistics</nobr></a>
-          </small></p>
-                    <a class="btn btn-primary" href="https://kerrygathers.github.io/avg-rent-map/" target="_blank">View Project</a>
-                </div>
-            </div>
-            <!-- /.row -->
-
-            <hr>
-
-            <!-- Project 5 -->
-            <div class="row">
-                <div class="col-md-7">
-                    <a href="https://kerrygathers.github.io/fossil-fuel-plants/" target="_blank">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="images/fossil-fuel.png" alt="">
-          </a>
-                </div>
-                <div class="col-md-5">
-                    <h3 class="project-title">Fossil Fuel Power</h3>
-                    <p>In spite of intensifying global climate change, 63% of the electricity produced in the U.S. in 2017 was generated by burning fossil fuels. This map shows fossil fuel power plants and their megawatt capacities according to the U.S. Energy Information Administration's <a href="https://www.eia.gov/electricity/data/eia923/" target="_blank">Form 923</a>.
-                    </p>
-                    <p><small>
-            Tech: <a class="tech" href="http://leafletjs.com/" target="_blank">Leaflet</a>
-            <a class="tech" href="https://www.javascript.com/" target="_blank">JavaScript</a>
-          </small></p>
-                    <a class="btn btn-primary" href="https://kerrygathers.github.io/fossil-fuel-plants/" target="_blank">View Project</a>
-                </div>
-            </div>
-            <!-- /.row -->
-
-            <hr>
-
-            <!-- Project 6 -->
-            <div class="row">
-                <div class="col-md-7">
-                    <a href="https://kerrygathers.github.io/denver-guide/" target="_blank">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="images/denver.png" alt="">
-          </a>
-                </div>
-                <div class="col-md-5">
-                    <h3 class="project-title">Homebuyer's Guide to Denver</h3>
-                    <p>When prospective homebuyers evaluate a neighborhood, they have a lot to consider. This application maps three community assets of interest to a particular homebuyer in Denver: food stores, after school programs, and fire stations. A click on the map highlights assets within 1 km of the click.</p>
-                    <p><small>
-            Tech: <a class="tech" href="http://leafletjs.com/" target="_blank">Leaflet</a>
-            <a class="tech" href="https://www.javascript.com/" target="_blank">JavaScript</a>
-          </small></p>
-                    <a class="btn btn-primary" href="https://kerrygathers.github.io/denver-guide/" target="_blank">View Project</a>
-                </div>
-            </div>
-            <!-- /.row -->
-
-            <hr>
-
-            <!-- Project 7 -->
-            <div class="row">
-
-                <div class="col-md-7">
-                    <a href="https://nmp.carto.com/u/kerryg/builder/deca6676-7d91-4a90-b4c8-e566b290fa99/embed" target="_blank">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="images/amtrak.png" alt="">
-          </a>
-                </div>
-                <div class="col-md-5">
-                    <h3 class="project-title">Amtrak Usage by State &amp; Station</h3>
-                    <p>Using data scraped from Amtrak's <a href="https://www.amtrak.com/about-amtrak/amtrak-facts/state-fact-sheets.html" target="_blank">2017 State Fact Sheets</a>, this map compares Amtrak ridership at both the state and city levels. Zoom in to activate proportional symbols indicating boardings and alightings at each Amtrak station.</p>
-                    <p><small>
-            Tech: <a class="tech" href="https://qgis.org/en/site/" target="_blank">QGIS</a>
-                        <a class="tech" href="https://carto.com/" target="_blank">CARTO</a>
-                        <a class="tech" href="http://tabula.technology/" target="_blank">Tabula</a>
-                        </small>
-                    </p>
-                    <a class="btn btn-primary" href="https://nmp.carto.com/u/kerryg/builder/deca6676-7d91-4a90-b4c8-e566b290fa99/embed" target="_blank">View Project</a>
-                </div>
-            </div>
-            <!-- /.row -->
-
-            <hr>
-
-            <!-- Project 8 -->
-            <div class="row">
-
-                <div class="col-md-7">
-                    <a href="https://kerrygathers.github.io/hometown-map/" target="_blank">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="images/shaker.png" alt="">
-          </a>
-                </div>
-                <div class="col-md-5">
-                    <h3 class="project-title">Welcome to Shaker Heights</h3>
-                    <p>Here's a lighthearted look at the place where I grew up, including some personal points of interest and background information on the town. If you get bored in the suburbs, follow a route to the perfect day in nearby Cleveland.
-                    </p>
-                    <p><small>
-            Tech: <a class="tech" href="http://leafletjs.com/" target="_blank">Leaflet</a>
-            <a class="tech" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>
-            <a class="tech" href="https://jquery.com/" target="_blank">jQuery</a>
-          </small></p>
-                    <a class="btn btn-primary" href="https://kerrygathers.github.io/hometown-map/" target="_blank">View Project</a>
-                </div>
+            <p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </section>
+        <section>
+            <div class="skill-box pt-3 pr-3 pl-3 pb-1 my-4">
+                <h4 class="skills-title">Skills</h4>
+                <p>
+                    <span class="badge skill"><i class="fa fa-check check"></i>&nbsp;ArcGIS&nbsp;Desktop</span>
+                    <span class="badge skill"><i class="fa fa-check check"></i>&nbsp;ArcGIS&nbsp;Online</span>
+                    <span class="badge skill"><i class="fa fa-check check"></i>&nbsp;ArcGIS Story Maps &amp; Web AppBuilder</span>
+                    <span class="badge skill"><i class="fa fa-check check"></i>&nbsp;QGIS</span>
+                    <span class="badge skill"><i class="fa fa-check check"></i>&nbsp;HTML5</span>
+                    <span class="badge skill"><i class="fa fa-check check"></i>&nbsp;CSS</span>
+                    <span class="badge skill"><i class="fa fa-check check"></i>&nbsp;JavaScript</span>
+                    <span class="badge skill"><i class="fa fa-check check"></i>&nbsp;jQuery</span>
+                    <span class="badge skill"><i class="fa fa-check check"></i>&nbsp;SQL</span>
+                    <span class="badge skill"><i class="fa fa-check check"></i>&nbsp;Leaflet</span>
+                    <span class="badge skill"><i class="fa fa-check check"></i>&nbsp;Mapbox</span>
+                    <span class="badge skill"><i class="fa fa-check check"></i>&nbsp;CARTO</span>
+                    <span class="badge skill"><i class="fa fa-check check"></i>&nbsp;Bootstrap</span>
+                    <span class="badge skill"><i class="fa fa-check check"></i>&nbsp;Microsoft Office Suite</span>
+                    <span class="badge skill"><i class="fa fa-check check"></i>&nbsp;Adobe Creative Suite</span>
+                    <span class="badge skill"><i class="fa fa-check check"></i>&nbsp;Writing &amp; Editing</span>
+                    <span class="badge skill"><i class="fa fa-check check"></i>&nbsp;Research</span>
+                    <span class="badge skill"><i class="fa fa-check check"></i>&nbsp;Policy Analysis</span>
+                    <span class="badge skill"><i class="fa fa-check check"></i>&nbsp;Customer Service</span>
+                    <span class="badge skill"><i class="fa fa-check check"></i>&nbsp;Community Engagement</span>
+                </p>
             </div>
         </section>
-        <!-- /.row -->
 
-        <hr>
 
-        <!-- Pagination to add when necessary
+        <section>
+            <h3 class="section-title mb-3">Experience</h3>
 
-      <ul class="pagination justify-content-center">
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-            <span class="sr-only">Previous</span>
-          </a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">1</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">2</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">3</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">Next</span>
-          </a>
-        </li>
-      </ul>
-    -->
+            <h5 class="job-title"><strong>New York City Department of City Planning</strong><span class="divider">&nbsp;&nbsp;|&nbsp;&nbsp;</span>Planning Analyst&nbsp;&nbsp;&nbsp;
+                <nobr><span class="date">2017 - present</span></nobr>
+            </h5>
+            <p class="location">New York, NY</p>
+            <p class="my-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <ul class="mt-2">
+                <li>Thing 1</li>
+                <li>Thing 1</li>
+                <li>Thing 1</li>
+            </ul>
 
-        <!-- About Section -->
-        <section id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 mx-auto">
-                        <h3>About the Author</h3>
-                        <div class='my-4 clearfix'>
-                            <div class="float-md-left mb-5 mr-md-4"><img class="rounded img-fluid" src="images/kerry.jpg" alt=""></div>
-                            <p>I'm Kerry Gathers. I'm an analyst with the <a href="http://nyc.gov/planning" target="_blank">New York City Department of City Planning</a>, where I leverage the agency's data and expertise to help planners work more effectively and empower other city stakeholders to participate in the planning process.</p>
-                            <p>I make maps for work, school (shout out to <a href="https://newmapsplus.uky.edu/" target="_blank">New Maps Plus</a>), and fun.</p>
-                            <p>I live in Brooklyn, New York.</p>
-                        </div>
-                    </div>
+            <h5 class="job-title"><strong>Maryland-National Capital Park &amp; Planning Commission</strong>&nbsp;&nbsp;|&nbsp;&nbsp;GIS Specialist II&nbsp;&nbsp;
+                <nobr><span class="date">2013 - 2017</span></nobr>
+            </h5>
+            <p class="location">Upper Marlboro, MD</p>
+            <p class="my-1">Served as the primary GIS resource for the Prince George's County Planning Department's Countywide Planning Division, providing maps, data, and analysis for over 30 planners. Led GIS projects for the Transportation, Environmental, and Historic Preservation Planning Sections, as well as county agencies and the Economic Development Corporation. Evaluated and analyzed proposed development projects, economic initiatives, and laws to help shape staff recommendations. Identified internal and external data needs; created tools to meet them.</p>
+            <ul class="mt-2">
+                <li>Built innovative ArcGIS Online web mapping applications, including the <strong><a href="http://mncppc.maps.arcgis.com/apps/webappviewer/index.html?id=4fcaa26d9cdf402eba12db5771bff2a7" target="_blank">College Park Airport Imaginary Surfaces Explorer</a></strong>, the <strong><a href="http://mncppc.maps.arcgis.com/apps/webappviewer/index.html?id=db315dc766b8484a9464dc7464569a8f" target="_blank">Stream and Wetland Buffer Identifier</a></strong>, and <strong><a href="http://mncppc.maps.arcgis.com/apps/MapSeries/index.html?appid=0e9bbe4871a3483888e0e56b129c76a7" target="_blank">Historic Prince George's</a></strong>.</li>
+                <li>Led GIS activities supporting several master plans, including the <strong><a href="http://mncppcapps.org/planning/publications/BookDetail.cfm?item_id=329&Category_id=1" target="_blank">Prince George's County Resource Conservation Plan</a></strong>.</li>
+                <li>Earned the <strong>2015 Planning Director's Award</strong>, given annually to one employee for extraordinary job performance.</li>
+            </ul>
+
+            <h5 class="job-title"><strong>Zekiah Technologies</strong>&nbsp;&nbsp;|&nbsp;&nbsp;Geospatial Analyst&nbsp;&nbsp;
+                <nobr><span class="date">2012 - 2013</span></nobr>
+            </h5>
+            <p class="location">La Plata, MD</p>
+            <p class="my-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <ul class="mt-2">
+                <li>Thing 1</li>
+                <li>Thing 1</li>
+                <li>Thing 1</li>
+            </ul>
+
+            <h5 class="job-title"><strong>Maryland-National Capital Park &amp; Planning Commission</strong>&nbsp;&nbsp;|&nbsp;&nbsp;IT Support/GIS Technician&nbsp;&nbsp;
+                <nobr><span class="date">2011 - 2012</span></nobr>
+            </h5>
+            <p class="location">Riverdale, MD</p>
+            <p class="my-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <ul class="mt-2">
+                <li>Thing 1</li>
+                <li>Thing 1</li>
+                <li>Thing 1</li>
+            </ul>
+
+            <hr>
+
+            <section>
+                <h3 class="section-title mb-3">Education</h3>
+
+                <h5 class="job-title"><strong>Graduate Certificate</strong>&nbsp;&nbsp;|&nbsp;&nbsp;Web Mapping&nbsp;&nbsp;
+                    <nobr><span class="date">2018</span></nobr>
+                    <p class="location"><a href="https://newmapsplus.uky.edu/" target="_blank">New Maps Plus</a> at the University of Kentucky</p>
+                </h5>
+                <p class="my-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+
+                <h5 class="job-title mt-3"><strong>M.A.</strong>&nbsp;&nbsp;|&nbsp;&nbsp;Geography&nbsp;&nbsp;
+                    <nobr><span class="date">2011</span></nobr>
+                    <p class="location">The University of Georgia</p>
+                </h5>
+                <p class="my-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+
+
+                <h5 class="job-title mt-3"><strong>B.A.</strong>&nbsp;&nbsp;|&nbsp;&nbsp;Sociology, Minor in Geography&nbsp;&nbsp;
+                    <nobr><span class="date">2006</span></nobr>
+                    <p class="location">The University of Georgia</p>
+                </h5>
+
+                <hr>
+
+            </section>
+            <h3 class="section-title mb-3">Volunteer Work</h3>
+
+            <h5 class="job-title"><strong>Prologue DC</strong>&nbsp;&nbsp;|&nbsp;&nbsp;GIS Contributor&nbsp;&nbsp;
+                <nobr><span class="date">2016</span></nobr>
+            </h5>
+            <p class="location">Washington, DC</p>
+            <p class="my-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <ul class="mt-2">
+                <li>Thing 1</li>
+                <li>Thing 1</li>
+                <li>Thing 1</li>
+            </ul>
+
+            <section>
+                <div class="map-container my-5">
+                    <div id='map'></div>
                 </div>
-            </div>
+            </section>
+
+
+
+
         </section>
 
         <!-- Footer -->
@@ -311,8 +219,49 @@
     </div>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet-src.js"></script>
+
+    <script>
+        // initial map options, disabling pan/zoom
+        var options = {
+            scrollWheelZoom: true,
+            zoomSnap: .2,
+            dragging: true,
+            zoomControl: true,
+            center: [37.5, -81.5672707], // lat/lon values
+            zoom: 5.4
+        }
+
+        // create Leaflet map and apply options
+        var map = L.map("map", options);
+
+        // Move zoom control to bottom left
+        map.zoomControl.setPosition('topleft');
+
+        var tiles = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain-background/{z}/{x}/{y}{r}.{ext}', {
+            attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+            subdomains: 'abcd',
+            minZoom: 0,
+            maxZoom: 18,
+            ext: 'png'
+        });
+
+        tiles.addTo(map);
+
+        $('#map').on('shown.bs.tab', function(e) {
+            //clear map first
+            clearMap();
+            //resize the map
+            map.invalidateSize(true);
+            //load the map once all layers cleared
+            loadMap();
+        })
+    </script>
 
 </body>
 
