@@ -15,7 +15,7 @@ body {
 }
 
 .title-bar {
-    background-image: url("../images/brooklyn.jpg");
+    background-image: url("../images/skyline-1912-light.jpg");
     font-family: 'Raleway', sans-serif;
     color: #671515;
     text-align: center;
@@ -120,6 +120,10 @@ footer {
     position: absolute;
     top: 21px;
     right: 18px;
+}
+
+.contact-info a {
+    color: #006400;
 }
 
 .summary {
