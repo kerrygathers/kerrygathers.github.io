@@ -89,7 +89,7 @@ footer {
 /* CV style */
 
 .header-bar {
-    background-image: url("../images/skyline-1912.jpg");
+    background-image: url("../images/skyline-1912-light.jpg");
     width: 100%;
     height: 74px;
     box-shadow: 0px 3px 3px #2F4F4F;
@@ -109,6 +109,21 @@ footer {
 .cv-title-bar {
     padding-bottom: 0px;
     border-bottom: solid 2px #ecf0f1;
+}
+
+.portfolio-link {
+    font-size: 18px;
+    font-weight: bold;
+    color: #006400;
+    background-color: rgb(255, 255, 255, .88);
+    padding: 4px 5px;
+    position: absolute;
+    top: 21px;
+    left: 18px;
+}
+
+.portfolio-link a {
+    color: #006400;
 }
 
 .contact-info {
