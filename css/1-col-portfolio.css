@@ -56,6 +56,10 @@ a:hover {
     text-decoration: none;
 }
 
+.built-for {
+    font-style: italic;
+}
+
 .tech {
     background-color: #57A746;
     color: #fff;
