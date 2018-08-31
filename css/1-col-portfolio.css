@@ -33,7 +33,8 @@ body {
 }
 
 .title-span {
-    background-color: rgb(255, 255, 255, .8);
+    background-color: #fff;
+    opacity: .8;
     display: inline-block;
     visibility: visible;
     padding: 4px 5px;
