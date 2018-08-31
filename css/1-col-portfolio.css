@@ -34,6 +34,7 @@ body {
 
 .title-span {
     background-color: rgb(255, 255, 255, .8);
+    display: inline-block;
     visibility: visible;
     padding: 4px 5px;
     border-radius: 3px;
@@ -236,5 +237,16 @@ footer {
 @media (max-width: 466px) {
     .cv-title {
         font-size: 54px;
+    }
+}
+
+@media (max-width: 520px) {
+    .contact-separator {
+        display: none;
+    }
+
+    .contact-text {
+        display: block;
+        line-height: 26px;
     }
 }
