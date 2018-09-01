@@ -243,10 +243,9 @@
     <!-- Bootstrap core JavaScript -->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet-src.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
 
     <script>
         // initial map options, disabling pan/zoom
@@ -255,8 +254,8 @@
             zoomSnap: .2,
             dragging: true,
             zoomControl: true,
-            center: [37.5, -81.5672707], // lat/lon values
-            zoom: 5.4
+            center: [38, -80], // lat/lon values
+            zoom: 5.8
         }
 
         // create Leaflet map and apply options
@@ -265,6 +264,17 @@
         // Move zoom control to bottom left
         map.zoomControl.setPosition('topleft');
 
+        var accessToken = 'pk.eyJ1Ijoia2dhdGhlcnMiLCJhIjoiY2pnd3VkODdzMWJtdjJxbXhqYWQ0MnNldSJ9.5nJcFQH7U3GAQh_vvq3Tcw'
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/kgathers/cjljm3xde2mo52rlkqc97bdmd/tiles/256/{z}/{x}/{y}?access_token=' + accessToken, {
+            attribution: '<a href="https://www.mapbox.com/about/maps/" target="_blank">© Mapbox</a> <a href="https://www.openstreetmap.org/about/" target="_blank">© OpenStreetMap</a>',
+            maxZoom: 18,
+            minZoom: 4,
+            id: 'mapbox.light',
+            accessToken: accessToken
+        }).addTo(map);
+
+        /*
         var tiles = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain-background/{z}/{x}/{y}{r}.{ext}', {
             attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
             subdomains: 'abcd',
@@ -274,7 +284,34 @@
         });
 
         tiles.addTo(map);
+        */
 
+        omnivore.csv('data/cv-points.csv')
+            .on('ready', function(e) {
+                drawMap(e.target.toGeoJSON());
+            })
+            .on('error', function(e) {
+                console.log(e.error[0].message);
+            });
+
+        function drawMap(data) {
+            // create separate layers from GeoJSON data
+            var cvLayer = L.geoJson(data, {
+                pointToLayer: function(feature, latlng) {
+                    var portIcon = new L.icon({
+                        iconUrl: feature.properties.icon,
+                        iconSize: [24, 24],
+                        popupAnchor: [-22, -22],
+                        className: "icon"
+                    });
+                    return L.marker(latlng, {
+                        icon: portIcon
+                    });
+                }
+            }).addTo(map)
+        }
+
+        /*
         $('#map').on('shown.bs.tab', function(e) {
             //clear map first
             clearMap();
@@ -282,7 +319,7 @@
             map.invalidateSize(true);
             //load the map once all layers cleared
             loadMap();
-        })
+        })*/
     </script>
 
 </body>
