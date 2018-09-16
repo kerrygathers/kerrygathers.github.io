@@ -1,6 +1,9 @@
-name,city,lat,lon,icon,image,description1,description2,narrative
-Home (kind of),"Shaker Heights, OH",41.476074,-81.553645,./icons/home-15.svg,,,,"I lived in Shaker until I was 13, when my family moved south to Atlanta. These days my connections to the Cleveland area are few, but I remain an Indians, Browns, and Cavs fan."
-The University of Georgia,"Athens, GA",33.955778,-83.374485,./icons/college-15.svg,,"M.A., Geography (2011)","B.A., Sociology, Minor in Geography (2006)",
-The University of Kentucky,"Lexington, KY",38.038654,-84.504129,./icons/college-15.svg,,"Graduate Certificate, Web Mapping (2018)",,"UK's New Maps Plus program offers its courses online, so I actually earned this certificate from my couch in Brooklyn. But Lexington is a great town!"
-Maryland-National Capital Park &amp; Planning Commission,"Upper Marlboro, MD",38.817994,-76.750983,./icons/suitcase-15.svg,,,,
-NYC Department of City Planning,"New York, NY",40.708175,-74.010402,./icons/suitcase-15.svg,,,,
+name,city,layer,lat,lon,icon,image,description1,description2,narrative
+Home (kind of),"Shaker Heights, OH",main,41.476074,-81.553645,./icons/home-15.svg,,,,"I lived in Shaker until I was 13, when my family moved south to Atlanta. These days my connections to the Cleveland area are few, but I remain an Indians, Browns, and Cavs fan."
+The University of Georgia,"Athens, GA",main,33.955778,-83.374485,./icons/college-15.svg,,"M.A., Geography (2011)","B.A., Sociology, Minor in Geography (2006)",
+The University of Kentucky,"Lexington, KY",main,38.038654,-84.504129,./icons/college-15.svg,,"Graduate Certificate, Web Mapping (2018)",,"UK's New Maps Plus program offers its courses online, so I actually earned this certificate from my couch in Brooklyn. But Lexington is a great town!"
+Maryland-National Capital Park &amp; Planning Commission,"Upper Marlboro, MD",group,38.817994,-76.750983,./icons/suitcase-15.svg,,,,
+NYC Department of City Planning,"New York, NY",main,40.708175,-74.010402,./icons/suitcase-15.svg,,,,
+Maryland-National Capital Park &amp; Planning Commission,"Riverdale, MD",group,38.969058,-76.918429,./icons/suitcase-15.svg,,,,
+U.S. Department of Homeland Security,"Arlington, VA",group,38.891266,-77.084523,./icons/suitcase-15.svg,,,,
+"Washington, DC Area","Washington, DC",individual,38.899492,-77.036554,./icons/suitcase-15.svg,,,,

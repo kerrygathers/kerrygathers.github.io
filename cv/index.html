@@ -296,19 +296,76 @@
 
         function drawMap(data) {
             // create separate layers from GeoJSON data
-            var cvLayer = L.geoJson(data, {
+            var cvLayerMain = L.geoJson(data, {
+                filter: function(feature) {
+                    if (feature.properties.layer == "main") {
+                        return feature;
+                    }
+                },
                 pointToLayer: function(feature, latlng) {
-                    var portIcon = new L.icon({
+                    var cvIcon = new L.icon({
                         iconUrl: feature.properties.icon,
-                        iconSize: [24, 24],
+                        iconSize: [20, 20],
                         popupAnchor: [-22, -22],
                         className: "icon"
                     });
                     return L.marker(latlng, {
-                        icon: portIcon
+                        icon: cvIcon
                     });
                 }
             }).addTo(map)
+
+            var cvLayerDCGroup = L.geoJson(data, {
+                filter: function(feature) {
+                    if (feature.properties.layer == "group") {
+                        return feature;
+                    }
+                },
+                pointToLayer: function(feature, latlng) {
+                    var cvIcon = new L.icon({
+                        iconUrl: feature.properties.icon,
+                        iconSize: [20, 20],
+                        popupAnchor: [-22, -22],
+                        className: "icon"
+                    });
+                    return L.marker(latlng, {
+                        icon: cvIcon
+                    });
+                }
+            }) /*.addTo(map)*/
+
+            var cvLayerDCInd = L.geoJson(data, {
+                filter: function(feature) {
+                    if (feature.properties.layer == "individual") {
+                        return feature;
+                    }
+                },
+                pointToLayer: function(feature, latlng) {
+                    var cvIcon = new L.icon({
+                        iconUrl: feature.properties.icon,
+                        iconSize: [20, 20],
+                        popupAnchor: [-22, -22],
+                        className: "icon"
+                    });
+                    return L.marker(latlng, {
+                        icon: cvIcon
+                    });
+                }
+            }).addTo(map)
+
+            map.on('zoomend', function() {
+                if (map.getZoom() > 7.2) {
+                    map.removeLayer(cvLayerDCInd);
+                    map.addLayer(cvLayerDCGroup);
+                } else {
+                    map.addLayer(cvLayerDCInd);
+                    map.removeLayer(cvLayerDCGroup);
+                }
+            });
+
+            cvLayerDCInd.on("click", function(event) {
+                map.setView([38.899492, -76.9], 9.6);
+            });
         }
 
         /*
