@@ -14,6 +14,10 @@ body {
     color: #2F4F4F;
 }
 
+.nav-link {
+    color: #2F4F4F;
+}
+
 .title-bar {
     background-image: url("../images/skyline-1912-light.jpg");
     font-family: 'Raleway', sans-serif;
