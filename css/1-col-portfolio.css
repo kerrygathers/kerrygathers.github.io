@@ -10,12 +10,13 @@ body {
     color: #2F4F4F;
 }
 
-.nav-item {
-    color: #2F4F4F;
+.nav-link {
+    color: #202020 !important;
 }
 
-.nav-link {
-    color: #2F4F4F;
+.nav-link:hover {
+    color: #202020 !important;
+    opacity: .7 !important;
 }
 
 .title-bar {
