@@ -1,9 +1,9 @@
-name,city,layer,lat,lon,icon,image,description1,description2,narrative
-Home (kind of),"Shaker Heights, OH",main,41.476074,-81.553645,./icons/home-15.svg,,,,"I lived in Shaker until I was 13, when my family moved south to Atlanta. These days my connections to the Cleveland area are few, but I remain an Indians, Browns, and Cavs fan."
-The University of Georgia,"Athens, GA",main,33.955778,-83.374485,./icons/college-15.svg,,"M.A., Geography (2011)","B.A., Sociology, Minor in Geography (2006)",
-The University of Kentucky,"Lexington, KY",main,38.038654,-84.504129,./icons/college-15.svg,,"Graduate Certificate, Web Mapping (2018)",,"UK's New Maps Plus program offers its courses online, so I actually earned this certificate from my couch in Brooklyn. But Lexington is a great town!"
-Maryland-National Capital Park &amp; Planning Commission,"Upper Marlboro, MD",group,38.817994,-76.750983,./icons/suitcase-15.svg,,,,
-NYC Department of City Planning,"New York, NY",main,40.708175,-74.010402,./icons/suitcase-15.svg,,,,
-Maryland-National Capital Park &amp; Planning Commission,"Riverdale, MD",group,38.969058,-76.918429,./icons/suitcase-15.svg,,,,
-U.S. Department of Homeland Security,"Arlington, VA",group,38.891266,-77.084523,./icons/suitcase-15.svg,,,,
-"Washington, DC Area","Washington, DC",individual,38.899492,-77.036554,./icons/suitcase-15.svg,,,,
+name,type,city,layer,lat,lon,icon,image,description1,description2,narrative
+Home (kind of),home,"Shaker Heights, OH",main,41.476074,-81.553645,./icons/home-15.svg,,"I lived in Shaker until I was 13, when my family moved south to Atlanta. These days my primary connection to Shaker Heights is devotion to Cleveland sports.",,"I lived in Shaker until I was 13, when my family moved south to Atlanta. These days my connections to the Cleveland area are few, but I remain an Indians, Browns, and Cavs fan."
+The University of Georgia,school,"Athens, GA",main,33.955778,-83.374485,./icons/college-15.svg,,"M.A., Geography (2011)","B.A., Sociology, Minor in Geography (2006)",
+The University of Kentucky,school,"Lexington, KY",main,38.038654,-84.504129,./icons/college-15.svg,,"Graduate Certificate, Web Mapping (2018)","UK's New Maps Plus program offers its courses online, so I earned this certificate from my couch in Brooklyn. But Lexington is a great town!","UK's New Maps Plus program offers its courses online, so I earned this certificate from my couch in Brooklyn. But Lexington is a great town!"
+Maryland-National Capital Park &amp; Planning Commission,work,"Upper Marlboro, MD",group,38.817994,-76.750983,./icons/suitcase-15.svg,,GIS Specialist II (2013 - 2017),Geospatial Analyst (2012),
+NYC Department of City Planning,work,"New York, NY",main,40.708175,-74.010402,./icons/suitcase-15.svg,,Planning Analyst (2017 - present),,
+Maryland-National Capital Park &amp; Planning Commission,work,"Riverdale, MD",group,38.969058,-76.918429,./icons/suitcase-15.svg,,IT Support/GIS Technician (2011),,
+U.S. Department of Homeland Security,work,"Arlington, VA",group,38.891266,-77.084523,./icons/suitcase-15.svg,,Geospatial Analyst (2013),,
+"Washington, DC",work,"Washington, DC",individual,38.899492,-77.036554,./icons/suitcase-15.svg,,,,

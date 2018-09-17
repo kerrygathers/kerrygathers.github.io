@@ -118,6 +118,7 @@ footer {
 .cv-subtitle {
     color: #2F4F4F;
     line-height: 36px;
+    font-size: 18px;
 }
 
 .cv-title-bar {
@@ -207,7 +208,7 @@ footer {
 }
 
 .job-title {
-    margin: 2px 0px;
+    margin: 5px 0 2px 0;
     line-height: 28px;
 }
 
@@ -231,6 +232,30 @@ footer {
     border: 2px solid #ecf0f1;
     width: 100%;
     height: 100%;
+}
+
+.tooltip-title {
+    color: #006400;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 4px 0 0 3px;
+}
+
+.tooltip-city {
+    font-style: italic;
+    margin: 3px 0 6px 3px;
+}
+
+.tooltip-body {
+    margin: 4px 0 4px 3px;
+}
+
+.leaflet-tooltip {
+    border-radius: 4px;
+    font-family: 'Raleway', sans-serif;
+    color: #2F4F4F;
+    width: 320px;
+    white-space: normal !important;
 }
 
 @media (min-width: 992px) {
