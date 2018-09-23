@@ -158,10 +158,27 @@ footer {
     padding: 4px 5px;
     position: absolute;
     top: 21px;
-    right: 18px;
+    right: 88px;
 }
 
 .contact-info a {
+    color: #006400;
+}
+
+.pdf-link {
+    font-size: 18px;
+    font-weight: bold;
+    color: #006400;
+    background-color: rgb(255, 255, 255);
+    Background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    padding: 4px 5px;
+    position: absolute;
+    top: 21px;
+    right: 18px;
+}
+
+.pdf-link a {
     color: #006400;
 }
 
@@ -286,7 +303,7 @@ footer {
     }
 }
 
-@media (max-width: 662px) {
+@media (max-width: 727px) {
     .portfolio-link {
         top: 6px;
         font-size: 14px;
@@ -297,6 +314,11 @@ footer {
         right: auto;
         top: 40px;
         font-size: 14px;
+    }
+
+    .pdf-link {
+        font-size: 14px;
+        top: 6px;
     }
 }
 
